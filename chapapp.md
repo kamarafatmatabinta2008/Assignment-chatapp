@@ -1,0 +1,5 @@
+Frontend: Next.js (React). It offers the fastest routing and built-in API routes for quick setups.
+Backend/Real-time: Supabase. Using its Realtime (WebSockets) engine allows for instant message syncing without writing a custom Socket.io server.
+Database: PostgreSQL (via Supabase). Relational integrity is vital for user profiles and message threading.
+Hosting: Vercel. Seamless deployment with the best DX (Developer Experience) for Next.js.I chose Next.js and Supabase to prioritize developer velocity and low latency. 
+For 50 users, managing a custom Socket.io server is over-engineering; Supabase’s PostgreSQL Realtime broadcasts changes instantly with zero boilerplate. Next.js provides a unified codebase for UI and API logic, while Vercel ensures global edge performance. PostgreSQL is the backbone, ensuring that even at this small scale, data integrity and complex relations are handled professionally.                                                                                                                           
